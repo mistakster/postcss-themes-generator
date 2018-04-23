@@ -1,0 +1,29 @@
+[
+  {
+    "name": "primary",
+    "match": "#e54096",
+    "themes": {
+      "portal": "#0080c5",
+      "business": "#c1d730",
+      "international": "#e5352d"
+    }
+  },
+  {
+    "name": "secondary",
+    "match": "#0080c5",
+    "themes": {
+      "portal": "#044466",
+      "business": "#044466",
+      "international": "#007bc0"
+    }
+  },
+  {
+    "name": "accent",
+    "match": "#c1d730",
+    "themes": {
+      "portal": "#e54096",
+      "business": "#0080c5",
+      "international": "#bd0a26"
+    }
+  }
+]
