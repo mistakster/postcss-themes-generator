@@ -1,0 +1,44 @@
+{
+  "name": "postcss-themes-generator",
+  "version": "1.0.0",
+  "description": "A PostCSS plugin which generates color themes according to a specification",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mistakster/postcss-themes-generator.git"
+  },
+  "keywords": [
+    "postcss",
+    "theme",
+    "color"
+  ],
+  "author": {
+    "name": "Vladimir Kuznetsov",
+    "email": "mistakster@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Dmitry Nikulin",
+      "email": "uklyumka@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mistakster/postcss-themes-generator/issues"
+  },
+  "homepage": "https://github.com/mistakster/postcss-themes-generator#readme",
+  "engines": {
+    "node": ">=6",
+    "npm": "^3.0.0"
+  },
+  "dependencies": {
+    "parse-color": "^1.0.0",
+    "postcss": "^6.0.21"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3"
+  }
+}
