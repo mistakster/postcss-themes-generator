@@ -1,29 +1,266 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should match "primary", "secondary" and "accent" modifiers 1`] = `".foo_primary { color: #e54096 }.theme-portal .foo_primary { color: #0080c5 }.theme-business .foo_primary { color: #c1d730 }.theme-international .foo_primary { color: #e5352d }.bar_secondary { color: #0080c5 }.theme-portal .bar_secondary { color: #044466 }.theme-business .bar_secondary { color: #044466 }.theme-international .bar_secondary { color: #007bc0 }.baz_accent { color: #c1d730 }.theme-portal .baz_accent { color: #e54096 }.theme-business .baz_accent { color: #0080c5 }.theme-international .baz_accent { color: #bd0a26 }"`;
+exports[`should match "primary", "secondary" and "accent" modifiers 1`] = `
+"
+.foo_primary {
+  color: #e54096;
+}
+.theme-portal .foo_primary {
+  color: #0080c5;
+}
+.theme-business .foo_primary {
+  color: #c1d730;
+}
+.theme-international .foo_primary {
+  color: #e5352d;
+}
+.bar_secondary {
+  color: #0080c5;
+}
+.theme-portal .bar_secondary {
+  color: #044466;
+}
+.theme-business .bar_secondary {
+  color: #044466;
+}
+.theme-international .bar_secondary {
+  color: #007bc0;
+}
+.baz_accent {
+  color: #c1d730;
+}
+.theme-portal .baz_accent {
+  color: #e54096;
+}
+.theme-business .baz_accent {
+  color: #0080c5;
+}
+.theme-international .baz_accent {
+  color: #bd0a26;
+}
+"
+`;
 
-exports[`should match color inside shortcut properties 1`] = `".foo_primary { border: #bf1a70 1px solid }.theme-portal .foo_primary { border: #004e79 1px solid }.theme-business .foo_primary { border: #8c9c1e 1px solid }.theme-international .foo_primary { border: #b01c16 1px solid }"`;
+exports[`should match color inside shortcut properties 1`] = `
+"
+.foo_primary {
+  border: #bf1a70 1px solid;
+}
+.theme-portal .foo_primary {
+  border: #004e79 1px solid;
+}
+.theme-business .foo_primary {
+  border: #8c9c1e 1px solid;
+}
+.theme-international .foo_primary {
+  border: #b01c16 1px solid;
+}
+"
+`;
 
-exports[`should match darken 5% function 1`] = `".foo_primary { color: #e22a8a }.theme-portal .foo_primary { color: #006fac }.theme-business .foo_primary { color: #b2c726 }.theme-international .foo_primary { color: #dd241b }"`;
+exports[`should match darken 5% function 1`] = `
+"
+.foo_primary {
+  color: #e22a8a;
+}
+.theme-portal .foo_primary {
+  color: #006fac;
+}
+.theme-business .foo_primary {
+  color: #b2c726;
+}
+.theme-international .foo_primary {
+  color: #dd241b;
+}
+"
+`;
 
-exports[`should match darken 15% function 1`] = `".foo_primary { color: #bf1a70 }.theme-portal .foo_primary { color: #004e79 }.theme-business .foo_primary { color: #8c9c1e }.theme-international .foo_primary { color: #b01c16 }"`;
+exports[`should match darken 15% function 1`] = `
+"
+.foo_primary {
+  color: #bf1a70;
+}
+.theme-portal .foo_primary {
+  color: #004e79;
+}
+.theme-business .foo_primary {
+  color: #8c9c1e;
+}
+.theme-international .foo_primary {
+  color: #b01c16;
+}
+"
+`;
 
-exports[`should match lighten 5% function 1`] = `".foo_primary { color: #e856a2 }.theme-portal .foo_primary { color: #0091df }.theme-business .foo_primary { color: #c7db45 }.theme-international .foo_primary { color: #e84b44 }"`;
+exports[`should match lighten 5% function 1`] = `
+"
+.foo_primary {
+  color: #e856a2;
+}
+.theme-portal .foo_primary {
+  color: #0091df;
+}
+.theme-business .foo_primary {
+  color: #c7db45;
+}
+.theme-international .foo_primary {
+  color: #e84b44;
+}
+"
+`;
 
-exports[`should match lighten 15% function 1`] = `".foo_primary { color: #ee83bb }.theme-portal .foo_primary { color: #13acff }.theme-business .foo_primary { color: #d4e370 }.theme-international .foo_primary { color: #ed7671 }"`;
+exports[`should match lighten 15% function 1`] = `
+"
+.foo_primary {
+  color: #ee83bb;
+}
+.theme-portal .foo_primary {
+  color: #13acff;
+}
+.theme-business .foo_primary {
+  color: #d4e370;
+}
+.theme-international .foo_primary {
+  color: #ed7671;
+}
+"
+`;
 
-exports[`should match modifiers at upper level 1`] = `".foo_primary .foo__test { color: #e54096 }.theme-portal .foo_primary .foo__test { color: #0080c5 }.theme-business .foo_primary .foo__test { color: #c1d730 }.theme-international .foo_primary .foo__test { color: #e5352d }"`;
+exports[`should match modifiers at upper level 1`] = `
+"
+.foo_primary .foo__test {
+  color: #e54096;
+}
+.theme-portal .foo_primary .foo__test {
+  color: #0080c5;
+}
+.theme-business .foo_primary .foo__test {
+  color: #c1d730;
+}
+.theme-international .foo_primary .foo__test {
+  color: #e5352d;
+}"
+`;
 
-exports[`should match pseudo selector 1`] = `".foo_primary:hover { color: #e54096 }.theme-portal .foo_primary:hover { color: #0080c5 }.theme-business .foo_primary:hover { color: #c1d730 }.theme-international .foo_primary:hover { color: #e5352d }"`;
+exports[`should match pseudo selector 1`] = `
+"
+.foo_primary:hover {
+  color: #e54096;
+}
+.theme-portal .foo_primary:hover {
+  color: #0080c5;
+}
+.theme-business .foo_primary:hover {
+  color: #c1d730;
+}
+.theme-international .foo_primary:hover {
+  color: #e5352d;
+}
+"
+`;
 
-exports[`should process rgba() color 1`] = `".foo_accent { background-color: rgba(193, 215, 48, 0.15) }.theme-portal .foo_accent { background-color: rgba(229, 64, 150, 0.15) }.theme-business .foo_accent { background-color: rgba(0, 128, 197, 0.15) }.theme-international .foo_accent { background-color: rgba(189, 10, 38, 0.15) }"`;
+exports[`should process rgba() color 1`] = `
+"
+.foo_accent {
+  background-color: rgba(193, 215, 48, 0.15);
+}
+.theme-portal .foo_accent {
+  background-color: rgba(229, 64, 150, 0.15);
+}
+.theme-business .foo_accent {
+  background-color: rgba(0, 128, 197, 0.15);
+}
+.theme-international .foo_accent {
+  background-color: rgba(189, 10, 38, 0.15);
+}
+"
+`;
 
-exports[`should process rgba() color in border 1`] = `".foo_accent { border: 1px solid rgba(193, 215, 48, 0.15) }.theme-portal .foo_accent { border: 1px solid rgba(229, 64, 150, 0.15) }.theme-business .foo_accent { border: 1px solid rgba(0, 128, 197, 0.15) }.theme-international .foo_accent { border: 1px solid rgba(189, 10, 38, 0.15) }"`;
+exports[`should process rgba() color in border 1`] = `
+"
+.foo_accent {
+  border: 1px solid rgba(193, 215, 48, 0.15);
+}
+.theme-portal .foo_accent {
+  border: 1px solid rgba(229, 64, 150, 0.15);
+}
+.theme-business .foo_accent {
+  border: 1px solid rgba(0, 128, 197, 0.15);
+}
+.theme-international .foo_accent {
+  border: 1px solid rgba(189, 10, 38, 0.15);
+}
+"
+`;
 
-exports[`should process rgba() color in border mirror order 1`] = `".foo_accent { border: rgba(193, 215, 48, 0.15) 1px solid }.theme-portal .foo_accent { border: rgba(229, 64, 150, 0.15) 1px solid }.theme-business .foo_accent { border: rgba(0, 128, 197, 0.15) 1px solid }.theme-international .foo_accent { border: rgba(189, 10, 38, 0.15) 1px solid }"`;
+exports[`should process rgba() color in border mirror order 1`] = `
+"
+.foo_accent {
+  border: rgba(193, 215, 48, 0.15) 1px solid;
+}
+.theme-portal .foo_accent {
+  border: rgba(229, 64, 150, 0.15) 1px solid;
+}
+.theme-business .foo_accent {
+  border: rgba(0, 128, 197, 0.15) 1px solid;
+}
+.theme-international .foo_accent {
+  border: rgba(189, 10, 38, 0.15) 1px solid;
+}
+"
+`;
 
-exports[`should process rgba() color without spaces between commas 1`] = `".foo_accent { background-color: rgba(193,215,48,0.15) }.theme-portal .foo_accent { background-color: rgba(229, 64, 150, 0.15) }.theme-business .foo_accent { background-color: rgba(0, 128, 197, 0.15) }.theme-international .foo_accent { background-color: rgba(189, 10, 38, 0.15) }"`;
+exports[`should process rgba() color without spaces between commas 1`] = `
+"
+.foo_accent {
+  background-color: rgba(193,215,48,0.15);
+}
+.theme-portal .foo_accent {
+  background-color: rgba(229, 64, 150, 0.15);
+}
+.theme-business .foo_accent {
+  background-color: rgba(0, 128, 197, 0.15);
+}
+.theme-international .foo_accent {
+  background-color: rgba(189, 10, 38, 0.15);
+}
+"
+`;
 
-exports[`should skip unknown values 1`] = `".foo_accent { background-color: #c1d730; border: none; }.theme-portal .foo_accent { background-color: #e54096; border: none; }.theme-business .foo_accent { background-color: #0080c5; border: none; }.theme-international .foo_accent { background-color: #bd0a26; border: none; }"`;
+exports[`should skip unknown values 1`] = `
+"
+.foo_accent {
+  background-color: #c1d730;
+  border: none;
+}
+.theme-portal .foo_accent {
+  background-color: #e54096;
+  border: none;
+}
+.theme-business .foo_accent {
+  background-color: #0080c5;
+  border: none;
+}
+.theme-international .foo_accent {
+  background-color: #bd0a26;
+  border: none;
+}
+"
+`;
 
-exports[`should warn on suspicious rule 1`] = `".foo_primary { display: block }.theme-portal .foo_primary { display: block }.theme-business .foo_primary { display: block }.theme-international .foo_primary { display: block }"`;
+exports[`should warn on suspicious rule 1`] = `
+"
+.foo_primary {
+  display: block;
+}
+.theme-portal .foo_primary {
+  display: block;
+}
+.theme-business .foo_primary {
+  display: block;
+}
+.theme-international .foo_primary {
+  display: block;
+}
+"
+`;
