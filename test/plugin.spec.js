@@ -44,7 +44,7 @@ it('should match modifiers at upper level', () => (
 )
 ));
 
-it('should match pseudo selector', () => (
+it('should match a pseudo selector', () => (
   run(`
 .foo_primary:hover {
   color: #e54096;
@@ -52,7 +52,7 @@ it('should match pseudo selector', () => (
 `)
 ));
 
-it('should warn on suspicious rule', () => (
+it('should warn on a suspicious rule', () => (
   run(`
 .foo_primary {
   display: block;
@@ -109,34 +109,12 @@ it('should remove unnecessary properties', () => (
 `)
 ));
 
-it('should process rgba() color', () => (
+it('should process a rgba() color', () => (
   run(`
 .foo_accent {
   background-color: rgba(193, 215, 48, 0.15);
-}
-`)
-));
-
-it('should process rgba() color without spaces between commas', () => (
-  run(`
-.foo_accent {
-  background-color: rgba(193,215,48,0.15);
-}
-`)
-));
-
-it('should process rgba() color in border', () => (
-  run(`
-.foo_accent {
+  outline-color: rgba(193,215,48,0.15);
   border: 1px solid rgba(193, 215, 48, 0.15);
-}
-`)
-));
-
-it('should process rgba() color in border mirror order', () => (
-  run(`
-.foo_accent {
-  border: rgba(193, 215, 48, 0.15) 1px solid;
 }
 `)
 ));

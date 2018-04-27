@@ -41,6 +41,23 @@ exports[`should match "primary", "secondary" and "accent" modifiers 1`] = `
 "
 `;
 
+exports[`should match a pseudo selector 1`] = `
+"
+.foo_primary:hover {
+  color: #e54096;
+}
+.theme-portal .foo_primary:hover {
+  color: #0080c5;
+}
+.theme-business .foo_primary:hover {
+  color: #c1d730;
+}
+.theme-international .foo_primary:hover {
+  color: #e5352d;
+}
+"
+`;
+
 exports[`should match color inside shortcut properties 1`] = `
 "
 .foo_primary {
@@ -142,87 +159,27 @@ exports[`should match modifiers at upper level 1`] = `
 }"
 `;
 
-exports[`should match pseudo selector 1`] = `
-"
-.foo_primary:hover {
-  color: #e54096;
-}
-.theme-portal .foo_primary:hover {
-  color: #0080c5;
-}
-.theme-business .foo_primary:hover {
-  color: #c1d730;
-}
-.theme-international .foo_primary:hover {
-  color: #e5352d;
-}
-"
-`;
-
-exports[`should process rgba() color 1`] = `
+exports[`should process a rgba() color 1`] = `
 "
 .foo_accent {
   background-color: rgba(193, 215, 48, 0.15);
-}
-.theme-portal .foo_accent {
-  background-color: rgba(229, 64, 150, 0.15);
-}
-.theme-business .foo_accent {
-  background-color: rgba(0, 128, 197, 0.15);
-}
-.theme-international .foo_accent {
-  background-color: rgba(189, 10, 38, 0.15);
-}
-"
-`;
-
-exports[`should process rgba() color in border 1`] = `
-"
-.foo_accent {
+  outline-color: rgba(193,215,48,0.15);
   border: 1px solid rgba(193, 215, 48, 0.15);
 }
 .theme-portal .foo_accent {
+  background-color: rgba(229, 64, 150, 0.15);
+  outline-color: rgba(229, 64, 150, 0.15);
   border: 1px solid rgba(229, 64, 150, 0.15);
 }
 .theme-business .foo_accent {
+  background-color: rgba(0, 128, 197, 0.15);
+  outline-color: rgba(0, 128, 197, 0.15);
   border: 1px solid rgba(0, 128, 197, 0.15);
 }
 .theme-international .foo_accent {
-  border: 1px solid rgba(189, 10, 38, 0.15);
-}
-"
-`;
-
-exports[`should process rgba() color in border mirror order 1`] = `
-"
-.foo_accent {
-  border: rgba(193, 215, 48, 0.15) 1px solid;
-}
-.theme-portal .foo_accent {
-  border: rgba(229, 64, 150, 0.15) 1px solid;
-}
-.theme-business .foo_accent {
-  border: rgba(0, 128, 197, 0.15) 1px solid;
-}
-.theme-international .foo_accent {
-  border: rgba(189, 10, 38, 0.15) 1px solid;
-}
-"
-`;
-
-exports[`should process rgba() color without spaces between commas 1`] = `
-"
-.foo_accent {
-  background-color: rgba(193,215,48,0.15);
-}
-.theme-portal .foo_accent {
-  background-color: rgba(229, 64, 150, 0.15);
-}
-.theme-business .foo_accent {
-  background-color: rgba(0, 128, 197, 0.15);
-}
-.theme-international .foo_accent {
   background-color: rgba(189, 10, 38, 0.15);
+  outline-color: rgba(189, 10, 38, 0.15);
+  border: 1px solid rgba(189, 10, 38, 0.15);
 }
 "
 `;
@@ -245,7 +202,7 @@ exports[`should remove unnecessary properties 1`] = `
 "
 `;
 
-exports[`should warn on suspicious rule 1`] = `
+exports[`should warn on a suspicious rule 1`] = `
 "
 .foo_primary {
   display: block;
