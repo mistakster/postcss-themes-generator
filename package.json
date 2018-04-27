@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "color-convert": "^1.9.1",
-    "parse-color": "^1.0.0",
+    "css-tree": "^1.0.0-alpha.28",
     "postcss": "^6.0.21"
   },
   "devDependencies": {
