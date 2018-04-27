@@ -1,5 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should check that all selectors must be the same type 1`] = `
+"
+.foo_primary, .bar_secondary {
+  color: #e54096;
+}
+.foo_primary, .bar {
+  color: #e54096;
+}
+.baz, .bar_primary {
+  color: #e54096;
+}
+"
+`;
+
 exports[`should match "primary", "secondary" and "accent" modifiers 1`] = `
 "
 .foo_primary {
@@ -54,6 +68,47 @@ exports[`should match a pseudo selector 1`] = `
 }
 .theme-international .foo_primary:hover {
   color: #e5352d;
+}
+"
+`;
+
+exports[`should match and process multiple selectors 1`] = `
+"
+.foo_primary, .bar_primary, baz_primary {
+  color: #e54096;
+}
+.theme-portal .foo_primary, .theme-portal .bar_primary, .theme-portal baz_primary {
+  color: #0080c5;
+}
+.theme-business .foo_primary, .theme-business .bar_primary, .theme-business baz_primary {
+  color: #c1d730;
+}
+.theme-international .foo_primary, .theme-international .bar_primary, .theme-international baz_primary {
+  color: #e5352d;
+}
+.foo_secondary, .bar_secondary {
+  color: #0080c5;
+}
+.theme-portal .foo_secondary, .theme-portal .bar_secondary {
+  color: #044466;
+}
+.theme-business .foo_secondary, .theme-business .bar_secondary {
+  color: #044466;
+}
+.theme-international .foo_secondary, .theme-international .bar_secondary {
+  color: #007bc0;
+}
+.baz_accent, .foo_accent {
+  color: #c1d730;
+}
+.theme-portal .baz_accent, .theme-portal .foo_accent {
+  color: #e54096;
+}
+.theme-business .baz_accent, .theme-business .foo_accent {
+  color: #0080c5;
+}
+.theme-international .baz_accent, .theme-international .foo_accent {
+  color: #bd0a26;
 }
 "
 `;

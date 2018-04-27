@@ -4,10 +4,14 @@ const plugin = require('../lib/index');
 
 const config = require('./config.json');
 
-function run(input, warningCount) {
+function run(input, warningCount, opts) {
+  if (typeof opts === 'undefined') {
+    opts = {from: undefined};
+  }
+
   return postcss()
     .use(plugin(config))
-    .process(input, {from: undefined})
+    .process(input, opts)
     .then(result => {
       const css = result.css.toString();
 
@@ -50,6 +54,34 @@ it('should match a pseudo selector', () => (
   color: #e54096;
 }
 `)
+));
+
+it('should match and process multiple selectors', () => (
+  run(`
+.foo_primary, .bar_primary, baz_primary {
+  color: #e54096;
+}
+.foo_secondary, .bar_secondary {
+  color: #0080c5;
+}
+.baz_accent, .foo_accent {
+  color: #c1d730;
+}
+`)
+));
+
+it('should check that all selectors must be the same type', () => (
+  run(`
+.foo_primary, .bar_secondary {
+  color: #e54096;
+}
+.foo_primary, .bar {
+  color: #e54096;
+}
+.baz, .bar_primary {
+  color: #e54096;
+}
+`, 4)
 ));
 
 it('should warn on a suspicious rule', () => (
