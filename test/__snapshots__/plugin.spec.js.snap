@@ -227,7 +227,7 @@ exports[`should process rgba() color without spaces between commas 1`] = `
 "
 `;
 
-exports[`should skip unknown values 1`] = `
+exports[`should remove unnecessary properties 1`] = `
 "
 .foo_accent {
   background-color: #c1d730;
@@ -235,15 +235,12 @@ exports[`should skip unknown values 1`] = `
 }
 .theme-portal .foo_accent {
   background-color: #e54096;
-  border: none;
 }
 .theme-business .foo_accent {
   background-color: #0080c5;
-  border: none;
 }
 .theme-international .foo_accent {
   background-color: #bd0a26;
-  border: none;
 }
 "
 `;
@@ -254,13 +251,10 @@ exports[`should warn on suspicious rule 1`] = `
   display: block;
 }
 .theme-portal .foo_primary {
-  display: block;
 }
 .theme-business .foo_primary {
-  display: block;
 }
 .theme-international .foo_primary {
-  display: block;
 }
 "
 `;

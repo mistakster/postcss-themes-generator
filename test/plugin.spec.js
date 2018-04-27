@@ -100,7 +100,7 @@ it('should match color inside shortcut properties', () => (
 `)
 ));
 
-it('should skip unknown values', () => (
+it('should remove unnecessary properties', () => (
   run(`
 .foo_accent {
   background-color: #c1d730;
