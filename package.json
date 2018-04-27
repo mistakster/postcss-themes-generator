@@ -1,6 +1,6 @@
 {
   "name": "postcss-themes-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A PostCSS plugin which generates color themes according to a specification",
   "main": "lib/index.js",
   "files": [
